@@ -1,9 +1,13 @@
 import React from 'react'
 
-const CalculatorKeys = () => {
+const CalculatorKeys = ({ onClick }) => {
 
     return(
         <div>
+                <button name="("  onClick={e => onClick(e.target.name)}>(</button>
+                <button name="CE" onClick={e => onClick(e.target.name)}>CE</button>
+                <button name=")"  onClick={e => onClick(e.target.name)}>)</button>
+                <button name="C"  onClick={e => onClick(e.target.name)}>C</button><br/>          
                            
                 <button name="1" onClick={e => onClick(e.target.name)}>1</button>
                 <button name="2" onClick={e => onClick(e.target.name)}>2</button>
