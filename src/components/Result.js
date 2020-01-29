@@ -1,9 +1,15 @@
 import React from 'react';
 
 const Result = () => {
-
+    const  { result } = props;
     return(
-        <div></div>
+        <div>
+               
+    
+            <div className="result">
+                <p>{result}</p>
+            </div>
+        </div>
     )
 }
 
