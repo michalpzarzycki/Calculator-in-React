@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Result.module.css'
 
 const Result = ({ result }) => {
    
@@ -6,7 +7,7 @@ const Result = ({ result }) => {
         <div>
                
     
-            <div className="result">
+            <div className={styles.result}>
                 <p>{result}</p>
             </div>
         </div>

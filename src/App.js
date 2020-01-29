@@ -46,13 +46,13 @@ const backspace = () => {
 
 
   return (
-    <div>
-        <div>
+   
+        <div className="mainDiv">
           <h1>CALCULATOR</h1>
           <Result result={result}/>
           <CalculatorKeys onClick={onClick}/>
         </div>
-    </div>
+   
   );
 }
 

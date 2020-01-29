@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './CalculatorKeys.module.css'
 
 const CalculatorKeys = ({ onClick }) => {
 
     return(
-        <div>
+        <div className={styles.button}>
                 <button name="("  onClick={e => onClick(e.target.name)}>(</button>
                 <button name="CE" onClick={e => onClick(e.target.name)}>CE</button>
                 <button name=")"  onClick={e => onClick(e.target.name)}>)</button>
